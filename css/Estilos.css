@@ -31,6 +31,15 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
 
 /* Globales */
 
@@ -40,11 +49,49 @@ h1 {
     width: 95%;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Utilidades */
 
+.seccion {
+    padding: 1rem 0;
+}
+
 .m-0 {
     margin: 0;
+}
+
+
+/* btn */
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    margin: 2rem 0;
+}
+
+@media(min-width: 768px) {
+    .btn {
+        display: inline-block;
+    }
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn-brown {
+    background-color: #784d3c;
 }
 
 
@@ -124,4 +171,68 @@ h1 {
     .navegacion a:last-of-type {
         margin: 0;
     }
+}
+
+
+/* Contenido principal */
+
+.contenido-principal {
+    display: grid;
+}
+
+.cursos {
+    grid-row: 1/2;
+}
+
+@media(min-width:768px) {
+    .contenido-principal {
+        grid-template-columns: 66.6% 33.3%;
+        column-gap: 4rem;
+    }
+    .cursos {
+        grid-column: 2/3;
+    }
+}
+
+
+/* Blog */
+
+.entrada-blog {
+    padding-top: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog h3 {
+    margin: 0;
+}
+
+
+/* cursos */
+
+.cursos .lista-cursos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-cursos .curso:first-child {
+    padding: 3rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.lista-cursos .curso {
+    padding: 3rem 0;
+}
+
+.lista-cursos h3,
+.lista-cursos p {
+    margin: 0;
+}
+
+.lista-cursos p {
+    font-size: 2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.lista-cursos span {
+    font-weight: 700;
 }
