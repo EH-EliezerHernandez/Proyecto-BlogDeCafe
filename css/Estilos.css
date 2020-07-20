@@ -32,12 +32,12 @@ h1 {
 }
 
 h2 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     line-height: 1.2;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 
@@ -117,8 +117,11 @@ img {
     }
 }
 
-.barra .logo,
-.barra .navegacion a {
+
+/* .barra .logo,
+.barra .navegacion a */
+
+.site-header a {
     color: white;
     text-decoration: none;
 }
@@ -126,7 +129,6 @@ img {
 .texto-header {
     color: white;
     text-align: center;
-    line-height: 1.4;
     margin-top: 5rem;
 }
 
@@ -146,7 +148,6 @@ img {
 .texto-header p {
     font-size: 2.2rem;
     line-height: 2;
-    margin: 0;
 }
 
 .logo span {
@@ -214,13 +215,17 @@ img {
     padding: 0;
 }
 
-.lista-cursos .curso:first-child {
-    padding: 3rem 0;
+.lista-cursos .curso {
     border-bottom: 1px solid #e1e1e1;
+    padding: 3rem 0;
 }
 
-.lista-cursos .curso {
-    padding: 3rem 0;
+.lista-cursos .curso:last-of-type {
+    border: none;
+}
+
+.lista-cursos h3 {
+    font-size: 2.8rem;
 }
 
 .lista-cursos h3,
