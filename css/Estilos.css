@@ -121,7 +121,7 @@ img {
 /* .barra .logo,
 .barra .navegacion a */
 
-.site-header a {
+.barra a {
     color: white;
     text-decoration: none;
 }
@@ -167,7 +167,7 @@ img {
         display: inline;
     }
     .navegacion a {
-        margin: 1rem;
+        margin-right: 2rem;
     }
     .navegacion a:last-of-type {
         margin: 0;
@@ -201,6 +201,10 @@ img {
 .entrada-blog {
     padding-top: 2rem;
     border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type {
+    border: none;
 }
 
 .entrada-blog h3 {
@@ -240,4 +244,17 @@ img {
 
 .lista-cursos span {
     font-weight: 700;
+}
+
+
+/* Footer */
+
+.site-footer {
+    background-color: black;
+    padding: 3rem 0;
+    margin-top: 6rem;
+}
+
+.site-footer .barra>a {
+    font-size: 4rem;
 }
